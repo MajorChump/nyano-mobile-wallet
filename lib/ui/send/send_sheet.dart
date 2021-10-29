@@ -33,6 +33,7 @@ import 'package:natrium_wallet_flutter/util/numberutil.dart';
 import 'package:natrium_wallet_flutter/util/caseconverter.dart';
 import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
 import 'package:natrium_wallet_flutter/util/user_data_util.dart';
+import 'package:natrium_wallet_flutter/model/ratio.dart';
 
 class SendSheet extends StatefulWidget {
   final AvailableCurrency localCurrency;
@@ -662,7 +663,7 @@ class _SendSheetState extends State<SendSheet> {
                                       address.amount);
                             } else if (mounted) {
                               setState(() {
-                                _rawAmount = address.amount;
+                                _rawAmount = (BigInt.parse(address.amount) / BigInt.from(Ratio.ratio)).toString();
                                 // If raw amount has more precision than we support show a special indicator
                                 if (NumberUtil.getRawAsUsableString(_rawAmount)
                                         .replaceAll(",", "") ==
@@ -897,7 +898,7 @@ class _SendSheetState extends State<SendSheet> {
       String bananoAmount = _localCurrencyMode
           ? _convertLocalCurrencyToCrypto()
           : _rawAmount == null
-              ? _sendAmountController.text
+              ? (BigInt.parse(_sendAmountController.text) / BigInt.from(Ratio.ratio)).toString()
               : NumberUtil.getRawAsUsableString(_rawAmount);
       BigInt balanceRaw = StateContainer.of(context).wallet.accountBalance;
       BigInt sendAmount =

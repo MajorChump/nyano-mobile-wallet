@@ -58,7 +58,7 @@ class AppWallet {
     if (accountBalance == null) {
       return "0";
     }
-    return NumberUtil.getRawAsUsableString((_accountBalance.toString() * Ratio.ratio).toString());
+    return NumberUtil.getRawAsUsableString((_accountBalance * BigInt.from(Ratio.ratio)).toString());
   }
 
   String getLocalCurrencyPrice(AvailableCurrency currency, {String locale = "en_US"}) {
