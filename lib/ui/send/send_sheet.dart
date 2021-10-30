@@ -663,7 +663,6 @@ class _SendSheetState extends State<SendSheet> {
                                       address.amount);
                             } else if (mounted) {
                               setState(() {
-                                _rawAmount = (BigInt.parse(address.amount) / BigInt.from(Ratio.ratio)).toString();
                                 // If raw amount has more precision than we support show a special indicator
                                 if (NumberUtil.getRawAsUsableString(_rawAmount)
                                         .replaceAll(",", "") ==
@@ -898,9 +897,10 @@ class _SendSheetState extends State<SendSheet> {
       String bananoAmount = _localCurrencyMode
           ? _convertLocalCurrencyToCrypto()
           : _rawAmount == null
-              ? (BigInt.parse(_sendAmountController.text) / BigInt.from(Ratio.ratio)).toString()
+              ? _sendAmountController.text
               : NumberUtil.getRawAsUsableString(_rawAmount);
       BigInt balanceRaw = StateContainer.of(context).wallet.accountBalance;
+      bananoAmount = (BigInt.parse(bananoAmount) / BigInt.from(Ratio.ratio)).toString();
       BigInt sendAmount =
           BigInt.tryParse(NumberUtil.getAmountAsRaw(bananoAmount));
       if (sendAmount == null || sendAmount == BigInt.zero) {

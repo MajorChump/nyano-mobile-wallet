@@ -4,7 +4,7 @@ import 'package:decimal/decimal.dart';
 
 class NumberUtil {
   static final BigInt rawPerNano = BigInt.from(10).pow(30);
-  static const int maxDecimalDigits = 6; // Max digits after decimal
+  static const int maxDecimalDigits = 0; // Max digits after decimal
 
   /// Convert raw to ban and return as BigDecimal
   ///

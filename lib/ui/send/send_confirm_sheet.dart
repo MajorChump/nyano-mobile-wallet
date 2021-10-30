@@ -32,6 +32,9 @@ import 'package:natrium_wallet_flutter/util/caseconverter.dart';
 import 'package:natrium_wallet_flutter/model/authentication_method.dart';
 import 'package:natrium_wallet_flutter/model/vault.dart';
 import 'package:natrium_wallet_flutter/ui/widgets/security.dart';
+import 'package:natrium_wallet_flutter/model/ratio.dart';
+
+import 'package:decimal/decimal.dart';
 
 class SendConfirmSheet extends StatefulWidget {
   final String amountRaw;
@@ -371,10 +374,11 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
   Future<void> _doSend() async {
     try {
       _showSendingAnimation(context);
+      BigInt amountRaw = BigInt.from(BigInt.parse(widget.amountRaw) / BigInt.from(Ratio.ratio));
       ProcessResponse resp = await sl.get<AccountService>().requestSend(
         StateContainer.of(context).wallet.representative,
         StateContainer.of(context).wallet.frontier,
-        widget.amountRaw,
+          Decimal.fromBigInt(amountRaw).toString(),
         destinationAltered,
         StateContainer.of(context).wallet.address,
         NanoUtil.seedToPrivate(await StateContainer.of(context).getSeed(), StateContainer.of(context).selectedAccount.index),
@@ -385,7 +389,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
             transactionHash: resp.hash, cryptoCurrency: "NANO");        
       }
       StateContainer.of(context).wallet.frontier = resp.hash;
-      StateContainer.of(context).wallet.accountBalance += BigInt.parse(widget.amountRaw);
+      StateContainer.of(context).wallet.accountBalance -= amountRaw;
       // Show complete
       Contact contact = await sl.get<DBHelper>().getContactWithAddress(widget.destination);
       String contactName = contact == null ? null : contact.name;
