@@ -100,7 +100,7 @@ class StateContainerState extends State<StateContainer> {
   LanguageSetting curLanguage = LanguageSetting(AvailableLanguage.DEFAULT);
   AvailableBlockExplorer curBlockExplorer =
       AvailableBlockExplorer(AvailableBlockExplorerEnum.NANOCRAWLER);
-  BaseTheme curTheme = NatriumTheme();
+  BaseTheme curTheme = NyanoMobileTheme();
   // Currently selected account
   Account selectedAccount =
       Account(id: 1, name: "AB", index: 0, lastAccess: 0, selected: true);
