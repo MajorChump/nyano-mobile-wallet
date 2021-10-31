@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
 import 'package:logger/logger.dart';
 
 class BiometricUtil {

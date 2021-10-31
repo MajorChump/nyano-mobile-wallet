@@ -3,24 +3,24 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
 import 'package:event_taxi/event_taxi.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/bus/events.dart';
-import 'package:natrium_wallet_flutter/model/db/account.dart';
-import 'package:natrium_wallet_flutter/model/db/appdb.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheets.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/tap_outside_unfocus.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/bus/events.dart';
+import 'package:nyano_mobile_flutter/model/db/account.dart';
+import 'package:nyano_mobile_flutter/model/db/appdb.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/app_text_field.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/dialog.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheets.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/tap_outside_unfocus.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
 
 // Account Details Sheet
 class AccountDetailsSheet {
@@ -202,7 +202,7 @@ class AccountDetailsSheet {
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w100,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                           TextSpan(
@@ -221,18 +221,18 @@ class AccountDetailsSheet {
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w700,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                           TextSpan(
-                                            text: " NANO)",
+                                            text: " nyano)",
                                             style: TextStyle(
                                               color: StateContainer.of(context)
                                                   .curTheme
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w100,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                         ],
@@ -275,7 +275,7 @@ class AccountDetailsSheet {
                                             color: StateContainer.of(context)
                                                 .curTheme
                                                 .primary,
-                                            fontFamily: 'NunitoSans',
+                                            fontFamily: "UbuntuTitling",
                                           ),
                                         ),
                                       ])),

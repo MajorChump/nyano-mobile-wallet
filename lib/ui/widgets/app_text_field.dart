@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
 
 /// TextField button
 class TextFieldButton extends StatelessWidget {
@@ -146,7 +146,7 @@ class _AppTextFieldState extends State<AppTextField> {
               hintStyle: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w100,
-                fontFamily: 'NunitoSans',
+                fontFamily: "UbuntuTitling",
                 color: StateContainer.of(context).curTheme.text60,
               ),
               // First button

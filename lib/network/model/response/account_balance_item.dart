@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'package:natrium_wallet_flutter/network/model/response/pending_response.dart';
+import 'package:nyano_mobile_flutter/network/model/response/pending_response.dart';
 
 part 'account_balance_item.g.dart';
 

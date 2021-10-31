@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
 
 enum AddressTextType { PRIMARY60, PRIMARY, SUCCESS }
 

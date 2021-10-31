@@ -8,7 +8,7 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
 
 // Examples can assume:
 // enum Department { treasury, state }
@@ -272,7 +272,7 @@ class AppAlertDialog extends StatelessWidget {
             EdgeInsetsDirectional.fromSTEB(
                 24.0, 24.0, 24.0, content == null ? 20.0 : 0.0),
         child: DefaultTextStyle(
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.headline1,
           child: Semantics(child: title, namesRoute: true),
         ),
       ));
@@ -293,7 +293,7 @@ class AppAlertDialog extends StatelessWidget {
         child: Padding(
           padding: contentPadding,
           child: DefaultTextStyle(
-            style: Theme.of(context).textTheme.subhead,
+            style: Theme.of(context).textTheme.subtitle1,
             child: content,
           ),
         ),
@@ -536,7 +536,7 @@ class AppSimpleDialog extends StatelessWidget {
       body.add(Padding(
           padding: titlePadding,
           child: DefaultTextStyle(
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.headline1,
             child: Semantics(namesRoute: true, child: title),
           )));
     } else {

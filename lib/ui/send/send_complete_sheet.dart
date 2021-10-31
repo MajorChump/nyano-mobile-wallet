@@ -2,15 +2,15 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:manta_dart/messages.dart';
 
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
 
 class SendCompleteSheet extends StatefulWidget {
   final String amountRaw;
@@ -109,18 +109,18 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
-                            text: " NANO",
+                            text: " nyano",
                             style: TextStyle(
                               color: StateContainer.of(context)
                                   .curTheme
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w100,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -133,7 +133,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ],
@@ -156,7 +156,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                             color: StateContainer.of(context)
                                 .curTheme
                                 .success,
-                            fontFamily: 'NunitoSans',
+                            fontFamily: "UbuntuTitling",
                           ),
                         ),
                       ],

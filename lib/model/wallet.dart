@@ -1,12 +1,13 @@
 import 'package:decimal/decimal.dart';
 import 'package:intl/intl.dart';
-import 'package:natrium_wallet_flutter/model/available_currency.dart';
-import 'package:natrium_wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/model/available_currency.dart';
+import 'package:nyano_mobile_flutter/network/model/response/account_history_response_item.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/model/ratio.dart';
 
 /// Main wallet object that's passed around the app via state
 class AppWallet {
-  static const String defaultRepresentative = 'nano_1natrium1o3z5519ifou7xii8crpxpk8y65qmkih8e8bpsjri651oza8imdd';
+  static const String defaultRepresentative = 'nano_1gemini56efw4qrfzfcc71cky1wj7a6673fu5ue5afyyz55zb1cxkj8rkr1n';
 
   bool _loading; // Whether or not app is initially loading
   bool _historyLoading; // Whether or not we have received initial account history response
@@ -57,9 +58,8 @@ class AppWallet {
     if (accountBalance == null) {
       return "0";
     }
-    return NumberUtil.getRawAsUsableString(_accountBalance.toString());
+    return NumberUtil.getRawAsUsableString((_accountBalance * BigInt.from(Ratio.ratio)).toString());
   }
-
 
   String getLocalCurrencyPrice(AvailableCurrency currency, {String locale = "en_US"}) {
     Decimal converted = Decimal.parse(_localCurrencyPrice) * NumberUtil.getRawAsUsableDecimal(_accountBalance.toString());

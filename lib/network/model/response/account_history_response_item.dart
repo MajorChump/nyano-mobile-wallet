@@ -1,7 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'package:natrium_wallet_flutter/model/address.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/model/address.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/model/ratio.dart';
+import 'package:decimal/decimal.dart';
 
 part 'account_history_response_item.g.dart';
 
@@ -47,7 +49,7 @@ class AccountHistoryResponseItem {
    * Return amount formatted for use in the UI
    */
   String getFormattedAmount() {
-    return NumberUtil.getRawAsUsableString(amount);
+    return NumberUtil.getRawAsUsableString((Decimal.parse(amount) * Decimal.fromInt(Ratio.ratio)).toString());
   }
 
   factory AccountHistoryResponseItem.fromJson(Map<String, dynamic> json) => _$AccountHistoryResponseItemFromJson(json);
