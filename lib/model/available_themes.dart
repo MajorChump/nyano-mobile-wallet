@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet_flutter/themes.dart';
-import 'package:natrium_wallet_flutter/model/setting_item.dart';
+import 'package:nyano_mobile_flutter/themes.dart';
+import 'package:nyano_mobile_flutter/model/setting_item.dart';
 
 enum ThemeOptions { NATRIUM, TITANIUM, INDIUM, NEPTUNIUM, THORIUM, CARBON, NYANOMOBILE }
 
@@ -22,11 +22,12 @@ class ThemeSetting extends SettingSelectionItem {
         return "Indium";
       case ThemeOptions.TITANIUM:
         return "Titanium";
-      case ThemeOptions.NATRIUM:
-        return "Natrium";
       case ThemeOptions.NYANOMOBILE:
+        return "Nyano Mobile Pink";
+      case ThemeOptions.NATRIUM:
       default:
         return "Nyano Mobile";
+
     }
   }
 
@@ -42,11 +43,11 @@ class ThemeSetting extends SettingSelectionItem {
         return IndiumTheme();
       case ThemeOptions.TITANIUM:
         return TitaniumTheme();
-      case ThemeOptions.NATRIUM:
-        return NatriumTheme();
       case ThemeOptions.NYANOMOBILE:
-      default:
         return NyanoMobileTheme();
+      case ThemeOptions.NATRIUM:
+      default:
+      return NatriumTheme();
 
     }
   }
