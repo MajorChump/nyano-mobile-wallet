@@ -81,7 +81,7 @@ class _AppState extends State<App> {
           primaryColor: StateContainer.of(context).curTheme.primary,
           accentColor: StateContainer.of(context).curTheme.primary10,
           backgroundColor: StateContainer.of(context).curTheme.backgroundDark,
-          fontFamily: 'NunitoSans',
+          fontFamily: "UbuntuTitling",
           brightness: Brightness.dark,
         ),
         localizationsDelegates: [

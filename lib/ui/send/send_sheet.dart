@@ -265,7 +265,7 @@ class _SendSheetState extends State<SendSheet> {
                           color: StateContainer.of(context).curTheme.text60,
                           fontSize: 16.0,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'NunitoSans',
+                          fontFamily: "UbuntuTitling",
                         ),
                       ),
                     ],
@@ -332,7 +332,7 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w100,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                               TextSpan(
@@ -356,7 +356,7 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w700,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                               TextSpan(
@@ -370,7 +370,7 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w100,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                             ],
@@ -385,7 +385,7 @@ class _SendSheetState extends State<SendSheet> {
                                           color: Colors.transparent,
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.w100,
-                                          fontFamily: 'NunitoSans',
+                                          fontFamily: "UbuntuTitling",
                                         ),
                                       ),
                                     );
@@ -405,7 +405,7 @@ class _SendSheetState extends State<SendSheet> {
                                         color: StateContainer.of(context)
                                             .curTheme
                                             .primary,
-                                        fontFamily: 'NunitoSans',
+                                        fontFamily: "UbuntuTitling",
                                         fontWeight: FontWeight.w600,
                                       )),
                                 ),
@@ -487,7 +487,7 @@ class _SendSheetState extends State<SendSheet> {
                                         color: StateContainer.of(context)
                                             .curTheme
                                             .primary,
-                                        fontFamily: 'NunitoSans',
+                                        fontFamily: "UbuntuTitling",
                                         fontWeight: FontWeight.w600,
                                       )),
                                 ),
@@ -952,7 +952,7 @@ class _SendSheetState extends State<SendSheet> {
         fontWeight: FontWeight.w700,
         fontSize: 16.0,
         color: StateContainer.of(context).curTheme.primary,
-        fontFamily: 'NunitoSans',
+        fontFamily: "UbuntuTitling",
       ),
       inputFormatters: _rawAmount == null
           ? [

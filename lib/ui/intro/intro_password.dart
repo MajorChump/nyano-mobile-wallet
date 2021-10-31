@@ -162,7 +162,7 @@ class _IntroPasswordState extends State<IntroPassword> {
                                   fontSize: 16.0,
                                   color:
                                     this.passwordsMatch ? StateContainer.of(context).curTheme.primary : StateContainer.of(context).curTheme.text,
-                                  fontFamily: 'NunitoSans',
+                                  fontFamily: "UbuntuTitling",
                                 ),
                                 onSubmitted: (text) {
                                   confirmPasswordFocusNode.requestFocus();
@@ -206,7 +206,7 @@ class _IntroPasswordState extends State<IntroPassword> {
                                   fontSize: 16.0,
                                   color:
                                       this.passwordsMatch ? StateContainer.of(context).curTheme.primary : StateContainer.of(context).curTheme.text,
-                                  fontFamily: 'NunitoSans',
+                                  fontFamily: "UbuntuTitling",
                                 ),
                               ),
                               // Error Text
@@ -220,7 +220,7 @@ class _IntroPasswordState extends State<IntroPassword> {
                                           StateContainer.of(context)
                                               .curTheme
                                               .primary,
-                                      fontFamily: 'NunitoSans',
+                                      fontFamily: "UbuntuTitling",
                                       fontWeight: FontWeight.w600,
                                     )),
                               ),

@@ -217,7 +217,7 @@ class ContactDetailsSheet {
                                   color: StateContainer.of(context)
                                       .curTheme
                                       .primary,
-                                  fontFamily: 'NunitoSans',
+                                  fontFamily: "UbuntuTitling",
                                 ),
                               ),
                             ),
@@ -275,7 +275,7 @@ class ContactDetailsSheet {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .success,
-                                    fontFamily: 'NunitoSans',
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w600,
                                   )),
                             ),

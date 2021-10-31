@@ -483,7 +483,7 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                                       AutoSizeText(
                                         account.name,
                                         style: TextStyle(
-                                          fontFamily: "NunitoSans",
+                                          fontFamily: "UbuntuTitling",
                                           fontWeight: FontWeight.w600,
                                           fontSize: 16.0,
                                           color: StateContainer.of(context)
@@ -500,7 +500,7 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                                         account.address.substring(0, 12) +
                                             "...",
                                         style: TextStyle(
-                                          fontFamily: "OverpassMono",
+                                          fontFamily: "UbuntuTitling",
                                           fontWeight: FontWeight.w100,
                                           fontSize: 14.0,
                                           color: StateContainer.of(context)
@@ -547,7 +547,7 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                                               : "",
                                       style: TextStyle(
                                           fontSize: 16.0,
-                                          fontFamily: "NunitoSans",
+                                          fontFamily: "UbuntuTitling",
                                           fontWeight: FontWeight.w900,
                                           color: StateContainer.of(context)
                                               .curTheme

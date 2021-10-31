@@ -189,6 +189,10 @@ flutter:
                 weight: 400
               - asset: fonts/Comfortaa-Light.ttf
                 weight: 300
+        - family: UbuntuTitling
+          fonts:
+              - asset: fonts/UbuntuTitling-Bold.ttf
+                weight: 700
 
     # The following line ensures that the Material Icons font is
     # included with your application, so that you can use the icons in

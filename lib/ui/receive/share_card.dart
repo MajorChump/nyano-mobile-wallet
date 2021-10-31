@@ -260,7 +260,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             style: TextStyle(
                               color:
                                   StateContainer.of(context).curTheme.primary,
-                              fontFamily: "Comfortaa",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w300,
                               fontSize: 40,
                               letterSpacing: 1.5,
@@ -294,7 +294,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .primary,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -309,7 +309,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .text,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -322,7 +322,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             minFontSize: 1,
                             style: TextStyle(
                               fontSize: 50.0,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               height: 1.2,
                             ),
@@ -342,7 +342,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             maxLines: 1,
                             style: TextStyle(
                               color: StateContainer.of(context).curTheme.text,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               fontSize: 50,
                               height: 1.2,
@@ -363,7 +363,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             maxLines: 1,
                             style: TextStyle(
                               color: StateContainer.of(context).curTheme.text,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               fontSize: 50,
                               height: 1.2,
@@ -386,7 +386,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .text,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -402,7 +402,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .primary,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -415,7 +415,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             minFontSize: 1,
                             style: TextStyle(
                               fontSize: 50,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               height: 1.2,
                             ),
@@ -435,7 +435,7 @@ class _AppShareCardState extends State<AppShareCard> {
                       maxLines: 1,
                       style: TextStyle(
                         color: StateContainer.of(context).curTheme.primary,
-                        fontFamily: "Comfortaa",
+                        fontFamily: "UbuntuTitling",
                         fontWeight: FontWeight.w400,
                       ),
                     ),

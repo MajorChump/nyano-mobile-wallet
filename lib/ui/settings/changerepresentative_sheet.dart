@@ -162,7 +162,7 @@ class AppChangeRepresentativeSheet {
                               color: StateContainer.of(context).curTheme.text,
                               fontWeight: FontWeight.w700,
                               fontSize: 18.0,
-                              fontFamily: 'Nunito Sans'),
+                              fontFamily: "UbuntuTitling"),
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 7),
@@ -179,7 +179,7 @@ class AppChangeRepresentativeSheet {
                                         .text,
                                     fontWeight: FontWeight.w100,
                                     fontSize: 14.0,
-                                    fontFamily: 'Nunito Sans',
+                                    fontFamily: "UbuntuTitling",
                                   ),
                                 ),
                                 TextSpan(
@@ -191,7 +191,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: "%",
@@ -201,7 +201,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                               ],
                             ),
@@ -222,7 +222,7 @@ class AppChangeRepresentativeSheet {
                                           .text,
                                       fontWeight: FontWeight.w100,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: (rep.uptime).toStringAsFixed(2),
@@ -232,7 +232,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: "%",
@@ -242,7 +242,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                               ],
                             ),
@@ -274,7 +274,7 @@ class AppChangeRepresentativeSheet {
                                   .backgroundDark,
                               fontSize: 13,
                               fontWeight: FontWeight.w800,
-                              fontFamily: 'Nunito Sans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ),
@@ -522,7 +522,7 @@ class AppChangeRepresentativeSheet {
                                             color: StateContainer.of(context)
                                                 .curTheme
                                                 .success,
-                                            fontFamily: 'NunitoSans',
+                                            fontFamily: "UbuntuTitling",
                                             fontWeight: FontWeight.w600,
                                           )),
                                     ),

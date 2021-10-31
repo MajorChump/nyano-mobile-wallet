@@ -5,7 +5,7 @@ class AppStyles {
   // Text style for paragraph text.
   static TextStyle textStyleParagraph(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.medium,
         fontWeight: FontWeight.w200,
         color: StateContainer.of(context).curTheme.text);
@@ -14,7 +14,7 @@ class AppStyles {
   // Text style for paragraph text with primary color.
   static TextStyle textStyleParagraphPrimary(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.medium,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.primary);
@@ -23,7 +23,7 @@ class AppStyles {
   // Text style for thin paragraph text with primary color.
   static TextStyle textStyleParagraphThinPrimary(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w600,
         color: StateContainer.of(context).curTheme.primary);
@@ -32,7 +32,7 @@ class AppStyles {
   // Text style for paragraph text with primary color.
   static TextStyle textStyleParagraphSuccess(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.success);
@@ -41,7 +41,7 @@ class AppStyles {
   // For snackbar/Toast text
   static TextStyle textStyleSnackbar(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.background);
@@ -50,7 +50,7 @@ class AppStyles {
   // Text style for primary button
   static TextStyle textStyleButtonPrimary(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.background);
@@ -59,7 +59,7 @@ class AppStyles {
   // Green primary button
   static TextStyle textStyleButtonPrimaryGreen(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.successDark);
@@ -68,7 +68,7 @@ class AppStyles {
   // Text style for outline button
   static TextStyle textStyleButtonPrimaryOutline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.primary);
@@ -77,7 +77,7 @@ class AppStyles {
   // Text style for small outline button
   static TextStyle textStyleButtonPrimarySmallOutline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.primary);
@@ -86,7 +86,7 @@ class AppStyles {
   // Text style for small success outline button
   static TextStyle textStyleButtonSuccessSmallOutline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.success);
@@ -94,7 +94,7 @@ class AppStyles {
 
   static TextStyle textStyleButtonPrimaryOutlineDisabled(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.primary60);
@@ -103,7 +103,7 @@ class AppStyles {
   // Text style for success outline button
   static TextStyle textStyleButtonSuccessOutline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.success);
@@ -112,7 +112,7 @@ class AppStyles {
   // Text style for text outline button
   static TextStyle textStyleButtonTextOutline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._large,
         fontWeight: FontWeight.w700,
         color: StateContainer.of(context).curTheme.text);
@@ -125,7 +125,7 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       height: 1.5,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
@@ -135,7 +135,7 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       height: 1.5,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
@@ -145,7 +145,7 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       height: 1.5,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
@@ -155,7 +155,7 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       height: 1.5,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
@@ -165,14 +165,14 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       height: 1.5,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
   // Text style for alternate currencies on home page
   static TextStyle textStyleCurrencyAlt(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w600,
         color: StateContainer.of(context).curTheme.text60);
@@ -180,7 +180,7 @@ class AppStyles {
 
   static TextStyle textStyleCurrencyAltHidden(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w600,
         color: Colors.transparent);
@@ -189,7 +189,7 @@ class AppStyles {
   // Text style for primary currency on home page
   static TextStyle textStyleCurrency(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes._largest,
         fontWeight: FontWeight.w900,
         color: StateContainer.of(context).curTheme.primary);
@@ -198,7 +198,7 @@ class AppStyles {
   // Text style for primary currency on home page
   static TextStyle textStyleCurrencySmaller(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: 22,
         fontWeight: FontWeight.w900,
         color: StateContainer.of(context).curTheme.primary);
@@ -208,7 +208,7 @@ class AppStyles {
   // Text style for transaction card "Received"/"Sent" text
   static TextStyle textStyleTransactionType(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w600,
         color: StateContainer.of(context).curTheme.text);
@@ -217,7 +217,7 @@ class AppStyles {
   // Amount
   static TextStyle textStyleTransactionAmount(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         color: StateContainer.of(context).curTheme.primary60,
         fontSize: AppFontSizes.smallest,
         fontWeight: FontWeight.w600);
@@ -226,7 +226,7 @@ class AppStyles {
   // Unit (e.g. BAN)
   static TextStyle textStyleTransactionUnit(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       color: StateContainer.of(context).curTheme.primary60,
       fontSize: AppFontSizes.smallest,
       fontWeight: FontWeight.w100,
@@ -237,7 +237,7 @@ class AppStyles {
   static TextStyle textStyleTransactionAddress(BuildContext context) {
     return TextStyle(
       fontSize: AppFontSizes.smallest,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w100,
       color: StateContainer.of(context).curTheme.text60,
     );
@@ -249,7 +249,7 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w200,
       color: StateContainer.of(context).curTheme.text,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
@@ -259,14 +259,14 @@ class AppStyles {
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w200,
       color: StateContainer.of(context).curTheme.primary,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
     );
   }
 
   // Version info in settings
   static TextStyle textStyleVersion(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w100,
         color: StateContainer.of(context).curTheme.text60);
@@ -274,7 +274,7 @@ class AppStyles {
 
   static TextStyle textStyleVersionUnderline(BuildContext context) {
     return TextStyle(
-        fontFamily: "NunitoSans",
+        fontFamily: "UbuntuTitling",
         fontSize: AppFontSizes.small,
         fontWeight: FontWeight.w100,
         color: StateContainer.of(context).curTheme.text60,
@@ -284,7 +284,7 @@ class AppStyles {
   // Text style for alert dialog header
   static TextStyle textStyleDialogHeader(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes._large,
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.primary,
@@ -294,7 +294,7 @@ class AppStyles {
   // Text style for dialog options
   static TextStyle textStyleDialogOptions(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.medium,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.text,
@@ -304,7 +304,7 @@ class AppStyles {
   // Text style for dialog button text
   static TextStyle textStyleDialogButtonText(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.smallest,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.primary,
@@ -316,7 +316,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       color: StateContainer.of(context).curTheme.primary,
       height: 1.5,
       letterSpacing: 1,
@@ -327,7 +327,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       color: StateContainer.of(context).curTheme.text60,
       height: 1.5,
       letterSpacing: 1,
@@ -339,7 +339,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.smallText(context),
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       color: StateContainer.of(context).curTheme.primary,
       height: 1,
       letterSpacing: 1,
@@ -350,7 +350,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.smallText(context),
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       color: StateContainer.of(context).curTheme.text60,
       height: 1,
       letterSpacing: 1,
@@ -361,7 +361,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w100,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       color: StateContainer.of(context).curTheme.success,
       height: 1.5,
       letterSpacing: 1,
@@ -371,7 +371,7 @@ class AppStyles {
   // Text style for general headers like sheet headers
   static TextStyle textStyleHeader(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.largest(context),
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.text,
@@ -381,7 +381,7 @@ class AppStyles {
   // Text style for settings headers
   static TextStyle textStyleSettingsHeader(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes._largest,
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.text,
@@ -391,7 +391,7 @@ class AppStyles {
   // Text style for primary color header
   static TextStyle textStyleHeaderColored(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes._largest,
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.primary,
@@ -401,7 +401,7 @@ class AppStyles {
   // Text style for primary color header
   static TextStyle textStyleHeader2Colored(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.larger,
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.primary,
@@ -410,7 +410,7 @@ class AppStyles {
 
   static TextStyle textStylePinScreenHeaderColored(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes._large,
       fontWeight: FontWeight.w700,
       color: StateContainer.of(context).curTheme.primary,
@@ -419,7 +419,7 @@ class AppStyles {
 
   static TextStyle textStyleLogoutButton(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.small,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.text,
@@ -429,7 +429,7 @@ class AppStyles {
   // Text style for setting item header
   static TextStyle textStyleSettingItemHeader(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.medium,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.text,
@@ -438,7 +438,7 @@ class AppStyles {
 
   static TextStyle textStyleSettingItemHeader60(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.medium,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.text60,
@@ -447,7 +447,7 @@ class AppStyles {
 
   static TextStyle textStyleSettingItemHeader45(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.medium,
       fontWeight: FontWeight.w600,
       color: StateContainer.of(context).curTheme.text45,
@@ -457,7 +457,7 @@ class AppStyles {
   // Text style for setting item subheader
   static TextStyle textStyleSettingItemSubheader(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.smallest,
       fontWeight: FontWeight.w100,
       color: StateContainer.of(context).curTheme.text60,
@@ -466,7 +466,7 @@ class AppStyles {
 
   static TextStyle textStyleSettingItemSubheader30(BuildContext context) {
     return TextStyle(
-      fontFamily: "NunitoSans",
+      fontFamily: "UbuntuTitling",
       fontSize: AppFontSizes.smallest,
       fontWeight: FontWeight.w100,
       color: StateContainer.of(context).curTheme.text30,
@@ -478,7 +478,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.small,
       color: StateContainer.of(context).curTheme.primary,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w600,
     );
   }
@@ -488,7 +488,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.smallText(context),
       color: StateContainer.of(context).curTheme.primary,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w100,
     );
   }
@@ -498,7 +498,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.smallText(context),
       color: StateContainer.of(context).curTheme.success,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w100,
     );
   }
@@ -508,7 +508,7 @@ class AppStyles {
     return TextStyle(
       fontSize: AppFontSizes.smallText(context),
       color: StateContainer.of(context).curTheme.text30,
-      fontFamily: 'OverpassMono',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w100,
     );
   }
@@ -518,7 +518,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 16,
       color: StateContainer.of(context).curTheme.primary,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w700,
     );
   }
@@ -527,7 +527,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 16,
       color: StateContainer.of(context).curTheme.success,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w700,
     );
   }
@@ -536,7 +536,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 12,
       color: StateContainer.of(context).curTheme.text,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w400,
     );
   }
@@ -545,7 +545,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 12,
       color: StateContainer.of(context).curTheme.text60,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w400,
     );
   }
@@ -554,7 +554,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 20,
       color: StateContainer.of(context).curTheme.success,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w800,
     );
   }
@@ -563,7 +563,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 14,
       color: StateContainer.of(context).curTheme.text,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w400,
     );
   }
@@ -572,7 +572,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 12,
       color: StateContainer.of(context).curTheme.text60,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w400,
     );
   }
@@ -581,7 +581,7 @@ class AppStyles {
     return TextStyle(
       fontSize: 18,
       color: StateContainer.of(context).curTheme.background,
-      fontFamily: 'NunitoSans',
+      fontFamily: 'UbuntuTitling',
       fontWeight: FontWeight.w700,
     );
   }

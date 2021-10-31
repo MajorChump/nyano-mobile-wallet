@@ -142,7 +142,7 @@ class _SetPasswordSheetState extends State<SetPasswordSheet> {
                               fontSize: 16.0,
                               color:
                                 this.passwordsMatch ? StateContainer.of(context).curTheme.primary : StateContainer.of(context).curTheme.text,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                             onSubmitted: (text) {
                               confirmPasswordFocusNode.requestFocus();
@@ -186,7 +186,7 @@ class _SetPasswordSheetState extends State<SetPasswordSheet> {
                               fontSize: 16.0,
                               color:
                                   this.passwordsMatch ? StateContainer.of(context).curTheme.primary : StateContainer.of(context).curTheme.text,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           // Error Text
@@ -200,7 +200,7 @@ class _SetPasswordSheetState extends State<SetPasswordSheet> {
                                       StateContainer.of(context)
                                           .curTheme
                                           .primary,
-                                  fontFamily: 'NunitoSans',
+                                  fontFamily: "UbuntuTitling",
                                   fontWeight: FontWeight.w600,
                                 )),
                           ),

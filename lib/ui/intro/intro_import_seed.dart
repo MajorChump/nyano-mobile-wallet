@@ -391,7 +391,7 @@ class _IntroImportSeedState extends State<IntroImportSeedPage> {
                                     style: TextStyle(
                                       fontSize: 14.0,
                                       color: _seedMode ? _showSeedError ? StateContainer.of(context).curTheme.primary : Colors.transparent : _mnemonicError != null ? StateContainer.of(context).curTheme.primary : Colors.transparent,
-                                      fontFamily: 'NunitoSans',
+                                      fontFamily: "UbuntuTitling",
                                       fontWeight: FontWeight.w600,
                                     )),
                               ),

@@ -121,7 +121,7 @@ class _DisablePasswordSheetState extends State<DisablePasswordSheet> {
                               fontWeight: FontWeight.w700,
                               fontSize: 16.0,
                               color: StateContainer.of(context).curTheme.text,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           // Error Text
@@ -132,7 +132,7 @@ class _DisablePasswordSheetState extends State<DisablePasswordSheet> {
                                 style: TextStyle(
                                   fontSize: 14.0,
                                   color: StateContainer.of(context).curTheme.primary,
-                                  fontFamily: 'NunitoSans',
+                                  fontFamily: "UbuntuTitling",
                                   fontWeight: FontWeight.w600,
                                 )),
                           ),

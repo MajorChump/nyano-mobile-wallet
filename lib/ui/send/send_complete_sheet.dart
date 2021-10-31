@@ -109,7 +109,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -120,7 +120,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w100,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -133,7 +133,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                                   .success,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ],
@@ -156,7 +156,7 @@ class _SendCompleteSheetState extends State<SendCompleteSheet> {
                             color: StateContainer.of(context)
                                 .curTheme
                                 .success,
-                            fontFamily: 'NunitoSans',
+                            fontFamily: "UbuntuTitling",
                           ),
                         ),
                       ],

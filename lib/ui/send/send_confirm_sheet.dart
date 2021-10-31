@@ -180,7 +180,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -190,7 +190,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w100,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -202,7 +202,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ],

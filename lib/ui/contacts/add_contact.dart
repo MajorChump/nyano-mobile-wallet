@@ -179,7 +179,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
                           color: StateContainer.of(context)
                               .curTheme
                               .text,
-                          fontFamily: 'NunitoSans',
+                          fontFamily: "UbuntuTitling",
                         ),
                         inputFormatters: [
                           LengthLimitingTextInputFormatter(20),
@@ -208,7 +208,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
                               color: StateContainer.of(context)
                                   .curTheme
                                   .primary,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w600,
                             )),
                       ),
@@ -334,7 +334,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
                             color: StateContainer.of(context)
                                 .curTheme
                                 .primary,
-                            fontFamily: 'NunitoSans',
+                            fontFamily: "UbuntuTitling",
                             fontWeight: FontWeight.w600,
                           )),
                     ),

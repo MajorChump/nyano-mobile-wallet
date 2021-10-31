@@ -1435,7 +1435,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   text,
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
-                                    fontFamily: "NunitoSans",
+                                    fontFamily: "UbuntuTitling",
                                     fontSize: AppFontSizes.small,
                                     fontWeight: FontWeight.w600,
                                     color: Colors.transparent,
@@ -1454,7 +1454,7 @@ class _AppHomePageState extends State<AppHomePage>
                                       text,
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                        fontFamily: "NunitoSans",
+                                        fontFamily: "UbuntuTitling",
                                         fontSize: AppFontSizes.small - 4,
                                         fontWeight: FontWeight.w600,
                                         color: Colors.transparent,
@@ -1474,7 +1474,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   amount,
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
-                                      fontFamily: "NunitoSans",
+                                      fontFamily: "UbuntuTitling",
                                       color: Colors.transparent,
                                       fontSize: AppFontSizes.smallest,
                                       fontWeight: FontWeight.w600),
@@ -1492,7 +1492,7 @@ class _AppHomePageState extends State<AppHomePage>
                                       amount,
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                          fontFamily: "NunitoSans",
+                                          fontFamily: "UbuntuTitling",
                                           color: Colors.transparent,
                                           fontSize: AppFontSizes.smallest - 3,
                                           fontWeight: FontWeight.w600),
@@ -1522,7 +1522,7 @@ class _AppHomePageState extends State<AppHomePage>
                               textAlign: TextAlign.end,
                               style: TextStyle(
                                 fontSize: AppFontSizes.smallest,
-                                fontFamily: 'OverpassMono',
+                                fontFamily: "UbuntuTitling",
                                 fontWeight: FontWeight.w100,
                                 color: Colors.transparent,
                               ),
@@ -1541,7 +1541,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                     fontSize: AppFontSizes.smallest - 3,
-                                    fontFamily: 'OverpassMono',
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     color: Colors.transparent,
                                   ),
@@ -1754,7 +1754,7 @@ class _AppHomePageState extends State<AppHomePage>
                           "1234567",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "NunitoSans",
+                              fontFamily: "UbuntuTitling",
                               fontSize: AppFontSizes.small,
                               fontWeight: FontWeight.w600,
                               color: Colors.transparent),
@@ -1770,7 +1770,7 @@ class _AppHomePageState extends State<AppHomePage>
                               "1234567",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontFamily: "NunitoSans",
+                                  fontFamily: "UbuntuTitling",
                                   fontSize: AppFontSizes.small - 3,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.transparent),
@@ -1790,7 +1790,7 @@ class _AppHomePageState extends State<AppHomePage>
                   AutoSizeText(
                     "1234567",
                     style: TextStyle(
-                        fontFamily: "NunitoSans",
+                        fontFamily: "UbuntuTitling",
                         fontSize: AppFontSizes.largestc,
                         fontWeight: FontWeight.w900,
                         color: Colors.transparent),
@@ -1808,7 +1808,7 @@ class _AppHomePageState extends State<AppHomePage>
                       child: AutoSizeText(
                         "1234567",
                         style: TextStyle(
-                            fontFamily: "NunitoSans",
+                            fontFamily: "UbuntuTitling",
                             fontSize: AppFontSizes.largestc - 8,
                             fontWeight: FontWeight.w900,
                             color: Colors.transparent),
@@ -1830,7 +1830,7 @@ class _AppHomePageState extends State<AppHomePage>
                           "1234567",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "NunitoSans",
+                              fontFamily: "UbuntuTitling",
                               fontSize: AppFontSizes.small,
                               fontWeight: FontWeight.w600,
                               color: Colors.transparent),
@@ -1846,7 +1846,7 @@ class _AppHomePageState extends State<AppHomePage>
                               "1234567",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontFamily: "NunitoSans",
+                                  fontFamily: "UbuntuTitling",
                                   fontSize: AppFontSizes.small - 3,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.transparent),

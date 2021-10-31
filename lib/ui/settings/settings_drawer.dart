@@ -892,7 +892,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                               .curTheme
                                               .backgroundDark,
                                           fontSize: 16,
-                                          fontFamily: "NunitoSans",
+                                          fontFamily: "UbuntuTitling",
                                           fontWeight: FontWeight.w900,
                                         ),
                                       ),
@@ -1358,7 +1358,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                             child: Text(
                               StateContainer.of(context).selectedAccount.name,
                               style: TextStyle(
-                                fontFamily: "NunitoSans",
+                                fontFamily: "UbuntuTitling",
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16.0,
                                 color: StateContainer.of(context).curTheme.text,
@@ -1379,7 +1379,7 @@ class _SettingsSheetState extends State<SettingsSheet>
                                       ?.substring(0, 12)
                                   : "",
                               style: TextStyle(
-                                fontFamily: "OverpassMono",
+                                fontFamily: "UbuntuTitling",
                                 fontWeight: FontWeight.w100,
                                 fontSize: 14.0,
                                 color:

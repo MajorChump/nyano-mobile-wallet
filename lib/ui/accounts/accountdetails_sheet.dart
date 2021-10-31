@@ -202,7 +202,7 @@ class AccountDetailsSheet {
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w100,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                           TextSpan(
@@ -221,7 +221,7 @@ class AccountDetailsSheet {
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w700,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                           TextSpan(
@@ -232,7 +232,7 @@ class AccountDetailsSheet {
                                                   .primary60,
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w100,
-                                              fontFamily: 'NunitoSans',
+                                              fontFamily: "UbuntuTitling",
                                             ),
                                           ),
                                         ],
@@ -275,7 +275,7 @@ class AccountDetailsSheet {
                                             color: StateContainer.of(context)
                                                 .curTheme
                                                 .primary,
-                                            fontFamily: 'NunitoSans',
+                                            fontFamily: "UbuntuTitling",
                                           ),
                                         ),
                                       ])),
