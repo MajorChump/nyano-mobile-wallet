@@ -1618,10 +1618,10 @@ class _SettingsSheetState extends State<SettingsSheet>
                     ),
                     AppSettings.buildSettingsListItemSingleLine(
                         context,
-                        AppLocalization.of(context).shareNatrium,
+                        AppLocalization.of(context).shareNyano,
                         AppIcons.share, onPressed: () {
                       Share.share(
-                          "Check out Natrium - nyano Wallet for iOS and Android" +
+                          "Check out Nyano Mobile - nyano Wallet for iOS and Android" +
                               " https://natrium.io");
                     }),
                     Divider(

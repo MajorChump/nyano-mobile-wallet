@@ -293,7 +293,7 @@ class AppLocalization {
 
   String get welcomeText {
     return Intl.message(
-        "Welcome to Natrium. To begin, you may create a new wallet or import an existing one.",
+        "Welcome to Nyano Mobile. To begin, you may create a new wallet or import an existing one.",
         desc: 'intro_welcome_title',
         name: 'welcomeText');
   }
@@ -525,14 +525,14 @@ class AppLocalization {
         desc: 'settings_change_block_explorer', name: 'blockExplorer');
   }
 
-  String get shareNatrium {
-    return Intl.message("Share Natrium",
-        desc: 'settings_share', name: 'shareNatrium');
+  String get shareNyano {
+    return Intl.message("Share Nyano Mobile",
+        desc: 'settings_share', name: 'shareNyano');
   }
 
-  String get shareNatriumText {
-    return Intl.message("Check out Natrium! A premier nyano mobile wallet!",
-        desc: 'share_extra', name: 'shareNatriumText');
+  String get shareNyanoText {
+    return Intl.message("Check out Nyano Mobile! A premier nyano mobile wallet!",
+        desc: 'share_extra', name: 'shareNyanoText');
   }
 
   String get logout {
@@ -566,7 +566,7 @@ class AppLocalization {
 
   String get logoutDetail {
     return Intl.message(
-        "Logging out will remove your seed and all Natrium-related data from this device. If your seed is not backed up, you will never be able to access your funds again",
+        "Logging out will remove your seed and all Nyano Mobile-related data from this device. If your seed is not backed up, you will never be able to access your funds again",
         desc: 'settings_logout_alert_message',
         name: 'logoutDetail');
   }
@@ -639,7 +639,7 @@ class AppLocalization {
   }
 
   String get notificationBody {
-    return Intl.message("Open Natrium to view this transaction",
+    return Intl.message("Open Nyano Mobile to view this transaction",
         desc: 'notification_body', name: 'notificationBody');
   }
 
@@ -671,7 +671,7 @@ class AppLocalization {
   }
 
   String get kaliumWallet {
-    return Intl.message("Natrium Wallet",
+    return Intl.message("Nyano Mobile Wallet",
         desc: 'kalium_wallet', name: 'kaliumWallet');
   }
 
@@ -707,7 +707,7 @@ class AppLocalization {
 
   String get transferIntro {
     return Intl.message(
-        "This process will transfer the funds from a paper wallet to your Natrium wallet.\n\nTap the \"%1\" button to start.",
+        "This process will transfer the funds from a paper wallet to your Nyano Mobile wallet.\n\nTap the \"%1\" button to start.",
         desc: 'transfer_intro',
         name: 'transferIntro');
   }
@@ -756,7 +756,7 @@ class AppLocalization {
 
   String get transferComplete {
     return Intl.message(
-        "%1 nyano successfully transferred to your Natrium Wallet.\n",
+        "%1 nyano successfully transferred to your Nyano Mobile Wallet.\n",
         desc: 'transfer_complete_text',
         name: 'transferComplete');
   }
@@ -778,12 +778,12 @@ class AppLocalization {
   /// -- LOCK SCREEN
 
   String get unlockPin {
-    return Intl.message("Enter PIN to Unlock Natrium",
+    return Intl.message("Enter PIN to Unlock Nyano Mobile",
         desc: 'unlock_kalium_pin', name: 'unlockPin');
   }
 
   String get unlockBiometrics {
-    return Intl.message("Authenticate to Unlock Natrium",
+    return Intl.message("Authenticate to Unlock Nyano Mobile",
         desc: 'unlock_kalium_bio', name: 'unlockBiometrics');
   }
 
@@ -874,7 +874,7 @@ class AppLocalization {
 
   String get exampleCardIntro {
     return Intl.message(
-        "Welcome to Natrium. Once you receive nyano, transactions will show up like this:",
+        "Welcome to Nyano Mobile. Once you receive nyano, transactions will show up like this:",
         desc: 'example_card_intro',
         name: 'exampleCardIntro');
   }
@@ -1119,16 +1119,16 @@ class AppLocalization {
 
   /// PARAGRAPS
   String get passwordWillBeRequiredToOpenParagraph {
-    return Intl.message("This password will be required to open Natrium.",
+    return Intl.message("This password will be required to open Nyano Mobile.",
         desc:
-            'A paragraph that tells the users that the created password will be required to open Natrium.',
+            'A paragraph that tells the users that the created password will be required to open Nyano Mobile.',
         name: 'passwordWillBeRequiredToOpenParagraph');
   }
 
   String get passwordNoLongerRequiredToOpenParagraph {
-    return Intl.message("You will not need a password to open Natrium anymore.",
+    return Intl.message("You will not need a password to open Nyano Mobile anymore.",
         desc:
-            'An info paragraph that tells the user a password will no longer be needed to open Natrium',
+            'An info paragraph that tells the user a password will no longer be needed to open Nyano Mobile',
         name: 'passwordNoLongerRequiredToOpenParagraph');
   }
 
@@ -1170,9 +1170,9 @@ class AppLocalization {
   }
 
   String get requireAPasswordToOpenHeader {
-    return Intl.message("Require a password to open Natrium?",
+    return Intl.message("Require a password to open Nyano Mobile?",
         desc:
-            'A paragraph that asks the users if they would like a password to be required to open Natrium.',
+            'A paragraph that asks the users if they would like a password to be required to open Nyano Mobile.',
         name: 'requireAPasswordToOpenHeader');
   }
 
@@ -1220,7 +1220,7 @@ class AppLocalization {
   String get connectingHeader {
     return Intl.message("Connecting",
         desc:
-            'A header to let the user now that Natrium is currently connecting to (or loading) live chat.',
+            'A header to let the user now that Nyano Mobile is currently connecting to (or loading) live chat.',
         name: 'connectingHeader');
   }
 
