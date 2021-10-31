@@ -154,7 +154,7 @@ class NatriumTheme extends BaseTheme {
 
   static const blueishGreyDark = Color(0xFF4A90E2);
 
-  static const blueishGreyLight = Color(0xFFA0B4E2); 
+  static const blueishGreyLight = Color(0xFFA0B4E2);
 
   static const blueishGreyDarkest = Color(0xFF4A90E2);
 
