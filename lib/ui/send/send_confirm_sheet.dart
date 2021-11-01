@@ -5,33 +5,36 @@ import 'package:event_taxi/event_taxi.dart';
 import 'package:flutter/material.dart';
 import 'package:manta_dart/manta_wallet.dart';
 import 'package:manta_dart/messages.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
 
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/bus/events.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/model/db/appdb.dart';
-import 'package:natrium_wallet_flutter/model/db/contact.dart';
-import 'package:natrium_wallet_flutter/network/account_service.dart';
-import 'package:natrium_wallet_flutter/network/model/response/process_response.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/ui/send/send_complete_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/util/routes.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:natrium_wallet_flutter/util/nanoutil.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
-import 'package:natrium_wallet_flutter/util/biometrics.dart';
-import 'package:natrium_wallet_flutter/util/hapticutil.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/model/authentication_method.dart';
-import 'package:natrium_wallet_flutter/model/vault.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/security.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/bus/events.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/model/db/appdb.dart';
+import 'package:nyano_mobile_flutter/model/db/contact.dart';
+import 'package:nyano_mobile_flutter/network/account_service.dart';
+import 'package:nyano_mobile_flutter/network/model/response/process_response.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/ui/send/send_complete_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/util/routes.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/dialog.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheet_util.dart';
+import 'package:nyano_mobile_flutter/util/nanoutil.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/util/sharedprefsutil.dart';
+import 'package:nyano_mobile_flutter/util/biometrics.dart';
+import 'package:nyano_mobile_flutter/util/hapticutil.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/model/authentication_method.dart';
+import 'package:nyano_mobile_flutter/model/vault.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/security.dart';
+import 'package:nyano_mobile_flutter/model/ratio.dart';
+
+import 'package:decimal/decimal.dart';
 
 class SendConfirmSheet extends StatefulWidget {
   final String amountRaw;
@@ -177,17 +180,17 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
-                            text: " NANO",
+                            text: " nyano",
                             style: TextStyle(
                               color:
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w100,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                           TextSpan(
@@ -199,7 +202,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                                   StateContainer.of(context).curTheme.primary,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w700,
-                              fontFamily: 'NunitoSans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ],
@@ -371,10 +374,11 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
   Future<void> _doSend() async {
     try {
       _showSendingAnimation(context);
+      BigInt amountRaw = BigInt.from(BigInt.parse(widget.amountRaw) / BigInt.from(Ratio.ratio));
       ProcessResponse resp = await sl.get<AccountService>().requestSend(
         StateContainer.of(context).wallet.representative,
         StateContainer.of(context).wallet.frontier,
-        widget.amountRaw,
+          Decimal.fromBigInt(amountRaw).toString(),
         destinationAltered,
         StateContainer.of(context).wallet.address,
         NanoUtil.seedToPrivate(await StateContainer.of(context).getSeed(), StateContainer.of(context).selectedAccount.index),
@@ -385,7 +389,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
             transactionHash: resp.hash, cryptoCurrency: "NANO");        
       }
       StateContainer.of(context).wallet.frontier = resp.hash;
-      StateContainer.of(context).wallet.accountBalance += BigInt.parse(widget.amountRaw);
+      StateContainer.of(context).wallet.accountBalance -= amountRaw;
       // Show complete
       Contact contact = await sl.get<DBHelper>().getContactWithAddress(widget.destination);
       String contactName = contact == null ? null : contact.name;

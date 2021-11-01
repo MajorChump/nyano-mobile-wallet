@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/themes.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/themes.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/app_simpledialog.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
 
 class AppDialogs {
   static void showConfirmDialog(

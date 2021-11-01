@@ -11,43 +11,43 @@ import 'package:event_taxi/event_taxi.dart';
 import 'package:logger/logger.dart';
 import 'package:manta_dart/manta_wallet.dart';
 import 'package:manta_dart/messages.dart';
-import 'package:natrium_wallet_flutter/model/db/account.dart';
-import 'package:natrium_wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:natrium_wallet_flutter/network/model/response/subscribe_response.dart';
-import 'package:natrium_wallet_flutter/ui/popup_button.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/model/address.dart';
-import 'package:natrium_wallet_flutter/model/list_model.dart';
-import 'package:natrium_wallet_flutter/model/db/contact.dart';
-import 'package:natrium_wallet_flutter/model/db/appdb.dart';
-import 'package:natrium_wallet_flutter/network/model/block_types.dart';
-import 'package:natrium_wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/ui/contacts/add_contact.dart';
-import 'package:natrium_wallet_flutter/ui/send/send_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/receive/receive_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/settings/settings_drawer.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/remote_message_card.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/remote_message_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/list_slidable.dart';
-import 'package:natrium_wallet_flutter/ui/util/routes.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/reactive_refresh.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/transaction_state_tag.dart';
-import 'package:natrium_wallet_flutter/util/manta.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
-import 'package:natrium_wallet_flutter/util/hapticutil.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/model/db/account.dart';
+import 'package:nyano_mobile_flutter/network/model/response/alerts_response_item.dart';
+import 'package:nyano_mobile_flutter/network/model/response/subscribe_response.dart';
+import 'package:nyano_mobile_flutter/ui/popup_button.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/model/address.dart';
+import 'package:nyano_mobile_flutter/model/list_model.dart';
+import 'package:nyano_mobile_flutter/model/db/contact.dart';
+import 'package:nyano_mobile_flutter/model/db/appdb.dart';
+import 'package:nyano_mobile_flutter/network/model/block_types.dart';
+import 'package:nyano_mobile_flutter/network/model/response/account_history_response_item.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/ui/contacts/add_contact.dart';
+import 'package:nyano_mobile_flutter/ui/send/send_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/send/send_confirm_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/receive/receive_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/settings/settings_drawer.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/dialog.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/remote_message_card.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/remote_message_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheet_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/list_slidable.dart';
+import 'package:nyano_mobile_flutter/ui/util/routes.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/reactive_refresh.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/transaction_state_tag.dart';
+import 'package:nyano_mobile_flutter/util/manta.dart';
+import 'package:nyano_mobile_flutter/util/sharedprefsutil.dart';
+import 'package:nyano_mobile_flutter/util/hapticutil.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:natrium_wallet_flutter/bus/events.dart';
+import 'package:nyano_mobile_flutter/bus/events.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AppHomePage extends StatefulWidget {
@@ -1140,7 +1140,7 @@ class _AppHomePageState extends State<AppHomePage>
                                               context),
                                     ),
                                     TextSpan(
-                                      text: " NANO",
+                                      text: " nyano",
                                       style: AppStyles.textStyleTransactionUnit(
                                           context),
                                     ),
@@ -1256,7 +1256,7 @@ class _AppHomePageState extends State<AppHomePage>
                                       context),
                                 ),
                                 TextSpan(
-                                  text: " NANO",
+                                  text: " nyano",
                                   style: AppStyles.textStyleTransactionUnit(
                                       context),
                                 ),
@@ -1315,7 +1315,7 @@ class _AppHomePageState extends State<AppHomePage>
           style: AppStyles.textStyleTransactionWelcome(context),
         ),
         TextSpan(
-          text: "NANO",
+          text: "nyano",
           style: AppStyles.textStyleTransactionWelcomePrimary(context),
         ),
         TextSpan(
@@ -1435,7 +1435,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   text,
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
-                                    fontFamily: "NunitoSans",
+                                    fontFamily: "UbuntuTitling",
                                     fontSize: AppFontSizes.small,
                                     fontWeight: FontWeight.w600,
                                     color: Colors.transparent,
@@ -1454,7 +1454,7 @@ class _AppHomePageState extends State<AppHomePage>
                                       text,
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                        fontFamily: "NunitoSans",
+                                        fontFamily: "UbuntuTitling",
                                         fontSize: AppFontSizes.small - 4,
                                         fontWeight: FontWeight.w600,
                                         color: Colors.transparent,
@@ -1474,7 +1474,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   amount,
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
-                                      fontFamily: "NunitoSans",
+                                      fontFamily: "UbuntuTitling",
                                       color: Colors.transparent,
                                       fontSize: AppFontSizes.smallest,
                                       fontWeight: FontWeight.w600),
@@ -1492,7 +1492,7 @@ class _AppHomePageState extends State<AppHomePage>
                                       amount,
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                          fontFamily: "NunitoSans",
+                                          fontFamily: "UbuntuTitling",
                                           color: Colors.transparent,
                                           fontSize: AppFontSizes.smallest - 3,
                                           fontWeight: FontWeight.w600),
@@ -1522,7 +1522,7 @@ class _AppHomePageState extends State<AppHomePage>
                               textAlign: TextAlign.end,
                               style: TextStyle(
                                 fontSize: AppFontSizes.smallest,
-                                fontFamily: 'OverpassMono',
+                                fontFamily: "UbuntuTitling",
                                 fontWeight: FontWeight.w100,
                                 color: Colors.transparent,
                               ),
@@ -1541,7 +1541,7 @@ class _AppHomePageState extends State<AppHomePage>
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                     fontSize: AppFontSizes.smallest - 3,
-                                    fontFamily: 'OverpassMono',
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     color: Colors.transparent,
                                   ),
@@ -1754,7 +1754,7 @@ class _AppHomePageState extends State<AppHomePage>
                           "1234567",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "NunitoSans",
+                              fontFamily: "UbuntuTitling",
                               fontSize: AppFontSizes.small,
                               fontWeight: FontWeight.w600,
                               color: Colors.transparent),
@@ -1770,7 +1770,7 @@ class _AppHomePageState extends State<AppHomePage>
                               "1234567",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontFamily: "NunitoSans",
+                                  fontFamily: "UbuntuTitling",
                                   fontSize: AppFontSizes.small - 3,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.transparent),
@@ -1790,7 +1790,7 @@ class _AppHomePageState extends State<AppHomePage>
                   AutoSizeText(
                     "1234567",
                     style: TextStyle(
-                        fontFamily: "NunitoSans",
+                        fontFamily: "UbuntuTitling",
                         fontSize: AppFontSizes.largestc,
                         fontWeight: FontWeight.w900,
                         color: Colors.transparent),
@@ -1808,7 +1808,7 @@ class _AppHomePageState extends State<AppHomePage>
                       child: AutoSizeText(
                         "1234567",
                         style: TextStyle(
-                            fontFamily: "NunitoSans",
+                            fontFamily: "UbuntuTitling",
                             fontSize: AppFontSizes.largestc - 8,
                             fontWeight: FontWeight.w900,
                             color: Colors.transparent),
@@ -1830,7 +1830,7 @@ class _AppHomePageState extends State<AppHomePage>
                           "1234567",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "NunitoSans",
+                              fontFamily: "UbuntuTitling",
                               fontSize: AppFontSizes.small,
                               fontWeight: FontWeight.w600,
                               color: Colors.transparent),
@@ -1846,7 +1846,7 @@ class _AppHomePageState extends State<AppHomePage>
                               "1234567",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontFamily: "NunitoSans",
+                                  fontFamily: "UbuntuTitling",
                                   fontSize: AppFontSizes.small - 3,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.transparent),

@@ -10,29 +10,30 @@ import 'package:logger/logger.dart';
 import 'package:manta_dart/manta_wallet.dart';
 import 'package:manta_dart/messages.dart';
 
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/model/available_currency.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/model/address.dart';
-import 'package:natrium_wallet_flutter/model/db/contact.dart';
-import 'package:natrium_wallet_flutter/model/db/appdb.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/one_or_three_address_text.dart';
-import 'package:natrium_wallet_flutter/ui/util/formatters.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:natrium_wallet_flutter/util/manta.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
-import 'package:natrium_wallet_flutter/util/user_data_util.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/model/available_currency.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/model/address.dart';
+import 'package:nyano_mobile_flutter/model/db/contact.dart';
+import 'package:nyano_mobile_flutter/model/db/appdb.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/ui/send/send_confirm_sheet.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/app_text_field.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/dialog.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/one_or_three_address_text.dart';
+import 'package:nyano_mobile_flutter/ui/util/formatters.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheet_util.dart';
+import 'package:nyano_mobile_flutter/util/manta.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/util/sharedprefsutil.dart';
+import 'package:nyano_mobile_flutter/util/user_data_util.dart';
+import 'package:nyano_mobile_flutter/model/ratio.dart';
 
 class SendSheet extends StatefulWidget {
   final AvailableCurrency localCurrency;
@@ -264,7 +265,7 @@ class _SendSheetState extends State<SendSheet> {
                           color: StateContainer.of(context).curTheme.text60,
                           fontSize: 16.0,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'NunitoSans',
+                          fontFamily: "UbuntuTitling",
                         ),
                       ),
                     ],
@@ -331,7 +332,7 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w100,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                               TextSpan(
@@ -355,13 +356,13 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w700,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                               TextSpan(
                                                 text: _localCurrencyMode
                                                     ? ")"
-                                                    : " NANO)",
+                                                    : " nyano)",
                                                 style: TextStyle(
                                                   color:
                                                       StateContainer.of(context)
@@ -369,7 +370,7 @@ class _SendSheetState extends State<SendSheet> {
                                                           .primary60,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w100,
-                                                  fontFamily: 'NunitoSans',
+                                                  fontFamily: "UbuntuTitling",
                                                 ),
                                               ),
                                             ],
@@ -384,7 +385,7 @@ class _SendSheetState extends State<SendSheet> {
                                           color: Colors.transparent,
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.w100,
-                                          fontFamily: 'NunitoSans',
+                                          fontFamily: "UbuntuTitling",
                                         ),
                                       ),
                                     );
@@ -404,7 +405,7 @@ class _SendSheetState extends State<SendSheet> {
                                         color: StateContainer.of(context)
                                             .curTheme
                                             .primary,
-                                        fontFamily: 'NunitoSans',
+                                        fontFamily: "UbuntuTitling",
                                         fontWeight: FontWeight.w600,
                                       )),
                                 ),
@@ -486,7 +487,7 @@ class _SendSheetState extends State<SendSheet> {
                                         color: StateContainer.of(context)
                                             .curTheme
                                             .primary,
-                                        fontFamily: 'NunitoSans',
+                                        fontFamily: "UbuntuTitling",
                                         fontWeight: FontWeight.w600,
                                       )),
                                 ),
@@ -662,7 +663,6 @@ class _SendSheetState extends State<SendSheet> {
                                       address.amount);
                             } else if (mounted) {
                               setState(() {
-                                _rawAmount = address.amount;
                                 // If raw amount has more precision than we support show a special indicator
                                 if (NumberUtil.getRawAsUsableString(_rawAmount)
                                         .replaceAll(",", "") ==
@@ -806,7 +806,7 @@ class _SendSheetState extends State<SendSheet> {
 
   void toggleLocalCurrency() {
     // Keep a cache of previous amounts because, it's kinda nice to see approx what nano is worth
-    // this way you can tap button and tap back and not end up with X.9993451 NANO
+    // this way you can tap button and tap back and not end up with X.9993451 nyano
     if (_localCurrencyMode) {
       // Switching to crypto-mode
       String cryptoAmountStr;
@@ -900,6 +900,7 @@ class _SendSheetState extends State<SendSheet> {
               ? _sendAmountController.text
               : NumberUtil.getRawAsUsableString(_rawAmount);
       BigInt balanceRaw = StateContainer.of(context).wallet.accountBalance;
+      bananoAmount = (BigInt.parse(bananoAmount) / BigInt.from(Ratio.ratio)).toString();
       BigInt sendAmount =
           BigInt.tryParse(NumberUtil.getAmountAsRaw(bananoAmount));
       if (sendAmount == null || sendAmount == BigInt.zero) {
@@ -951,7 +952,7 @@ class _SendSheetState extends State<SendSheet> {
         fontWeight: FontWeight.w700,
         fontSize: 16.0,
         color: StateContainer.of(context).curTheme.primary,
-        fontFamily: 'NunitoSans',
+        fontFamily: "UbuntuTitling",
       ),
       inputFormatters: _rawAmount == null
           ? [

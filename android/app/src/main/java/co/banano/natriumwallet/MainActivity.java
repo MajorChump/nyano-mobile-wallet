@@ -1,4 +1,4 @@
-package co.banano.natriumwallet;
+package co.nyano.nyanomobile;
 
 import android.os.Bundle;
 

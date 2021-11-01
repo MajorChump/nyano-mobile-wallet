@@ -1,15 +1,15 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:natrium_wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/network/model/response/alerts_response_item.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/util/sharedprefsutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class RemoteMessageSheet extends StatefulWidget {

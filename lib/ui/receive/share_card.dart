@@ -3,10 +3,10 @@ import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/themes.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/themes.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flare_flutter/flare_actor.dart';
@@ -256,11 +256,11 @@ class _AppShareCardState extends State<AppShareCard> {
                           width: 60,
                           margin: EdgeInsets.only(top: 1),
                           child: AutoSizeText(
-                            "NANO",
+                            "nyano",
                             style: TextStyle(
                               color:
                                   StateContainer.of(context).curTheme.primary,
-                              fontFamily: "Comfortaa",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w300,
                               fontSize: 40,
                               letterSpacing: 1.5,
@@ -294,7 +294,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .primary,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -309,7 +309,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .text,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -322,7 +322,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             minFontSize: 1,
                             style: TextStyle(
                               fontSize: 50.0,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               height: 1.2,
                             ),
@@ -342,7 +342,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             maxLines: 1,
                             style: TextStyle(
                               color: StateContainer.of(context).curTheme.text,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               fontSize: 50,
                               height: 1.2,
@@ -363,7 +363,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             maxLines: 1,
                             style: TextStyle(
                               color: StateContainer.of(context).curTheme.text,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               fontSize: 50,
                               height: 1.2,
@@ -386,7 +386,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .text,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -402,7 +402,7 @@ class _AppShareCardState extends State<AppShareCard> {
                                     color: StateContainer.of(context)
                                         .curTheme
                                         .primary,
-                                    fontFamily: "OverpassMono",
+                                    fontFamily: "UbuntuTitling",
                                     fontWeight: FontWeight.w100,
                                     fontSize: 50.0,
                                     height: 1.2,
@@ -415,7 +415,7 @@ class _AppShareCardState extends State<AppShareCard> {
                             minFontSize: 1,
                             style: TextStyle(
                               fontSize: 50,
-                              fontFamily: "OverpassMono",
+                              fontFamily: "UbuntuTitling",
                               fontWeight: FontWeight.w100,
                               height: 1.2,
                             ),
@@ -429,13 +429,13 @@ class _AppShareCardState extends State<AppShareCard> {
                     width: 97,
                     margin: EdgeInsets.only(bottom: 12.5),
                     child: AutoSizeText(
-                      "\$NANO      NANO.ORG",
+                      "\$NANO      nyano.xyz",
                       minFontSize: 0.1,
                       stepGranularity: 0.1,
                       maxLines: 1,
                       style: TextStyle(
                         color: StateContainer.of(context).curTheme.primary,
-                        fontFamily: "Comfortaa",
+                        fontFamily: "UbuntuTitling",
                         fontWeight: FontWeight.w400,
                       ),
                     ),

@@ -6,33 +6,33 @@ import 'package:flutter/services.dart';
 
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:logger/logger.dart';
-import 'package:natrium_wallet_flutter/bus/events.dart';
-import 'package:natrium_wallet_flutter/network/account_service.dart';
-import 'package:natrium_wallet_flutter/network/model/response/process_response.dart';
+import 'package:nyano_mobile_flutter/bus/events.dart';
+import 'package:nyano_mobile_flutter/network/account_service.dart';
+import 'package:nyano_mobile_flutter/network/model/response/process_response.dart';
 
-import 'package:natrium_wallet_flutter/service_locator.dart';
-import 'package:natrium_wallet_flutter/appstate_container.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/dimens.dart';
-import 'package:natrium_wallet_flutter/ui/util/ui_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/sheets.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/buttons.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/dialog.dart';
-import 'package:natrium_wallet_flutter/ui/widgets/security.dart';
-import 'package:natrium_wallet_flutter/ui/util/routes.dart';
-import 'package:natrium_wallet_flutter/styles.dart';
-import 'package:natrium_wallet_flutter/app_icons.dart';
-import 'package:natrium_wallet_flutter/util/nanoutil.dart';
-import 'package:natrium_wallet_flutter/util/ninja/ninja_node.dart';
-import 'package:natrium_wallet_flutter/util/sharedprefsutil.dart';
-import 'package:natrium_wallet_flutter/util/biometrics.dart';
-import 'package:natrium_wallet_flutter/util/numberutil.dart';
-import 'package:natrium_wallet_flutter/util/hapticutil.dart';
-import 'package:natrium_wallet_flutter/util/caseconverter.dart';
-import 'package:natrium_wallet_flutter/model/authentication_method.dart';
-import 'package:natrium_wallet_flutter/model/vault.dart';
+import 'package:nyano_mobile_flutter/service_locator.dart';
+import 'package:nyano_mobile_flutter/appstate_container.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/dimens.dart';
+import 'package:nyano_mobile_flutter/ui/util/ui_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/app_simpledialog.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheet_util.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/sheets.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/buttons.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/dialog.dart';
+import 'package:nyano_mobile_flutter/ui/widgets/security.dart';
+import 'package:nyano_mobile_flutter/ui/util/routes.dart';
+import 'package:nyano_mobile_flutter/styles.dart';
+import 'package:nyano_mobile_flutter/app_icons.dart';
+import 'package:nyano_mobile_flutter/util/nanoutil.dart';
+import 'package:nyano_mobile_flutter/util/ninja/ninja_node.dart';
+import 'package:nyano_mobile_flutter/util/sharedprefsutil.dart';
+import 'package:nyano_mobile_flutter/util/biometrics.dart';
+import 'package:nyano_mobile_flutter/util/numberutil.dart';
+import 'package:nyano_mobile_flutter/util/hapticutil.dart';
+import 'package:nyano_mobile_flutter/util/caseconverter.dart';
+import 'package:nyano_mobile_flutter/model/authentication_method.dart';
+import 'package:nyano_mobile_flutter/model/vault.dart';
 
 import 'changerepresentativemanualentry_sheet.dart';
 
@@ -162,7 +162,7 @@ class AppChangeRepresentativeSheet {
                               color: StateContainer.of(context).curTheme.text,
                               fontWeight: FontWeight.w700,
                               fontSize: 18.0,
-                              fontFamily: 'Nunito Sans'),
+                              fontFamily: "UbuntuTitling"),
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 7),
@@ -179,7 +179,7 @@ class AppChangeRepresentativeSheet {
                                         .text,
                                     fontWeight: FontWeight.w100,
                                     fontSize: 14.0,
-                                    fontFamily: 'Nunito Sans',
+                                    fontFamily: "UbuntuTitling",
                                   ),
                                 ),
                                 TextSpan(
@@ -191,7 +191,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: "%",
@@ -201,7 +201,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                               ],
                             ),
@@ -222,7 +222,7 @@ class AppChangeRepresentativeSheet {
                                           .text,
                                       fontWeight: FontWeight.w100,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: (rep.uptime).toStringAsFixed(2),
@@ -232,7 +232,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                                 TextSpan(
                                   text: "%",
@@ -242,7 +242,7 @@ class AppChangeRepresentativeSheet {
                                           .primary,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 14.0,
-                                      fontFamily: 'Nunito Sans'),
+                                      fontFamily: "UbuntuTitling"),
                                 ),
                               ],
                             ),
@@ -274,7 +274,7 @@ class AppChangeRepresentativeSheet {
                                   .backgroundDark,
                               fontSize: 13,
                               fontWeight: FontWeight.w800,
-                              fontFamily: 'Nunito Sans',
+                              fontFamily: "UbuntuTitling",
                             ),
                           ),
                         ),
@@ -522,7 +522,7 @@ class AppChangeRepresentativeSheet {
                                             color: StateContainer.of(context)
                                                 .curTheme
                                                 .success,
-                                            fontFamily: 'NunitoSans',
+                                            fontFamily: "UbuntuTitling",
                                             fontWeight: FontWeight.w600,
                                           )),
                                     ),

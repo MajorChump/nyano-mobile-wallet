@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:natrium_wallet_flutter/localization.dart';
-import 'package:natrium_wallet_flutter/model/setting_item.dart';
+import 'package:nyano_mobile_flutter/localization.dart';
+import 'package:nyano_mobile_flutter/model/setting_item.dart';
 
 enum NatriconOptions { ON, OFF }
 
