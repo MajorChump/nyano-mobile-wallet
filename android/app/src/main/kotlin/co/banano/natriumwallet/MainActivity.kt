@@ -1,4 +1,4 @@
-package co.banano.natriumwallet
+package co.nyano.nyanomobile
 
 import io.flutter.embedding.android.FlutterActivity
 

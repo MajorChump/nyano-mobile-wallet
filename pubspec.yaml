@@ -1,12 +1,12 @@
 name: nyano_mobile_flutter
-description: Nyano Mobile - Fast, Robust & Secure NANO Wallet.
+description: Nyano Mobile - Fast, Robust & Secure nyano Wallet.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
 # followed by an optional build number separated by a +.
 # Both the version and the builder number may be overridden in flutter
 # build by specifying --build-name and --build-number, respectively.
-version: 2.4.3+81
+version: 0.1.0
 
 environment:
     sdk: ">=2.11.99 <3.0.0"
