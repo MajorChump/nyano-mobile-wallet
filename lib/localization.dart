@@ -1231,7 +1231,7 @@ class AppLocalization {
     } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOCAFE) {
       return 'https://nanocafe.cc/$hash';
     }
-    return 'https://nanocrawler.cc/explorer/block/$hash';
+    return 'https://nyanoscan.org/block/$hash';
   }
 
   String getAccountExplorerUrl(
@@ -1241,7 +1241,7 @@ class AppLocalization {
     } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOCAFE) {
       return 'https://nanocafe.cc/$account';
     }
-    return 'https://nanocrawler.cc/explorer/account/$account';
+    return 'https://nyanoscan.org/account/$account';
   }
 
   String get eulaUrl {
