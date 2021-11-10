@@ -22,8 +22,6 @@ if (flutterVersionName == null) {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
@@ -41,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "co.banano.natriumwallet"
+        applicationId "co.nyano.nyanomobile"
         minSdkVersion 18
         targetSdkVersion 30
         multiDexEnabled true
@@ -87,7 +85,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.11"
     implementation "com.bottlerocketstudios:vault:1.4.2"
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
